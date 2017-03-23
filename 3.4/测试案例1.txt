@@ -1,0 +1,12 @@
+#案例目的：测试获取IP地址所在地理信息API 
+"案例意图":"给定一个北京地区的IP地址，应该能够正确返回地理信息，并且city值为：北京市",
+"msg":"ReturnGoodWhenGetIpInfoGivenNormalIPInBeijing",
+"ip":"124.126.228.193",
+"expect":"北京市"
+--------
+"案例意图":"给定一个非法的IP地址，应该返回错误信息：invaild ip.",
+"msg":"ReturnErrorMsgWhenGetIpInfoGivenInvalidIP", 
+"ip": "124.126.228.", 
+"expect": "invaild ip."
+---------------
+#测试自动化程序，应能够正确处理这个文件
